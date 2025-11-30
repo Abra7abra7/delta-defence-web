@@ -51,9 +51,10 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
         tactical: {
-          green: "#00ff41",
+          green: "#0088ff", // Electric Blue (neon style like old green)
           blue: "#00d9ff",
         },
+        "deep-navy": "#0088ff", // Bright Electric Blue
         gunmetal: "#0a0a0a",
       },
       borderRadius: {

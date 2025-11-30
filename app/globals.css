@@ -16,7 +16,7 @@
     --primary: 0 0% 95%;
     --primary-foreground: 0 0% 4%;
 
-    --secondary: 162 100% 50%; /* tactical green */
+    --secondary: 211 100% 50%; /* Electric Blue (neon like old green) */
     --secondary-foreground: 0 0% 4%;
 
     --muted: 0 0% 15%;
@@ -30,11 +30,11 @@
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 162 100% 50%;
+    --ring: 211 100% 50%; /* Electric Blue */
 
     --radius: 0.5rem;
 
-    --chart-1: 162 100% 50%;
+    --chart-1: 211 100% 50%; /* Electric Blue */
     --chart-2: 189 100% 50%;
     --chart-3: 0 0% 60%;
     --chart-4: 0 0% 40%;
@@ -86,7 +86,7 @@
   }
   
   .tactical-glow {
-    @apply shadow-[0_0_15px_rgba(0,255,65,0.3)];
+    @apply shadow-[0_0_20px_rgba(0,136,255,0.5)];
   }
   
   .tactical-glow-blue {
