@@ -20,14 +20,14 @@ export function ServiceCarousel() {
     },
     {
       icon: Truck,
-      title: "Vehicle Modernization",
-      description: "Modernization of armored vehicles and military transport systems with cutting-edge technology.",
+      title: t("home.services.vehicles.title"),
+      description: t("home.services.vehicles.description"),
       color: "tactical-blue",
     },
     {
       icon: Wrench,
-      title: "Artillery Systems",
-      description: "Technologies and technological processes for NORICUM GHN-45 artillery system, 155mm howitzer.",
+      title: t("home.services.artillery.title"),
+      description: t("home.services.artillery.description"),
       color: "tactical-green",
     },
   ];

@@ -15,7 +15,17 @@
     "description": "We are an authorized research and development (R&D), commercial and manufacturing company specializing in the implementation of projects related to the production processes of armored vehicles and technological processes for the production of small-caliber, medium-caliber and large-caliber ammunition, including chemical inputs to production.",
     "since": "Since",
     "natoPartner": "NATO Partner",
-    "capabilities": "Our Capabilities"
+    "capabilities": "Our Capabilities",
+    "services": {
+      "vehicles": {
+        "title": "Vehicle Modernization",
+        "description": "Modernization of armored vehicles and military transport systems with cutting-edge defense technology."
+      },
+      "artillery": {
+        "title": "Artillery Systems",
+        "description": "Technologies and technological processes for NORICUM GHN-45 artillery system, 155mm howitzer."
+      }
+    }
   },
   "about": {
     "title": "OUR HISTORY",

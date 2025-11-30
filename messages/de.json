@@ -15,7 +15,17 @@
     "description": "Wir sind ein autorisiertes Forschungs- und Entwicklungs- (F&E), Handels- und Fertigungsunternehmen, das sich auf die Umsetzung von Projekten im Zusammenhang mit Produktionsprozessen von gepanzerten Fahrzeugen und technologischen Prozessen für die Herstellung von Klein-, Mittel- und Großkalibermunition spezialisiert hat, einschließlich chemischer Inputs für die Produktion.",
     "since": "Seit",
     "natoPartner": "NATO-Partner",
-    "capabilities": "Unsere Fähigkeiten"
+    "capabilities": "Unsere Fähigkeiten",
+    "services": {
+      "vehicles": {
+        "title": "Fahrzeugmodernisierung",
+        "description": "Modernisierung von gepanzerten Fahrzeugen und militärischen Transportsystemen mit modernster Verteidigungstechnologie."
+      },
+      "artillery": {
+        "title": "Artilleriesysteme",
+        "description": "Technologien und technologische Prozesse für das Artilleriesystem NORICUM GHN-45, 155-mm-Haubitze."
+      }
+    }
   },
   "about": {
     "title": "UNSERE GESCHICHTE",

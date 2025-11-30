@@ -25,10 +25,15 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
 
   const switchLanguage = (newLocale: string) => {
     // Remove current locale from pathname
-    const pathWithoutLocale = pathname.replace(/^\/(sk|en|ru|de)/, "");
+    const pathWithoutLocale = pathname.replace(/^\/(sk|en|ru|de|he)(\/|$)/, "/");
     
     // Build new path with new locale
-    const newPath = `/${newLocale}${pathWithoutLocale}`;
+    // If switching to SK (default), use path without locale prefix
+    const newPath = newLocale === "sk" && pathWithoutLocale === "/" 
+      ? "/" 
+      : newLocale === "sk"
+      ? pathWithoutLocale
+      : `/${newLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
     
     router.push(newPath);
     setIsOpen(false);

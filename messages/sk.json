@@ -15,7 +15,17 @@
     "description": "Sme autorizovaná výskumná a vývojová (V&V), obchodná a výrobná spoločnosť špecializujúca sa na realizáciu projektov súvisiacich s výrobnými procesmi obrených vozidiel a technologickými procesmi pre výrobu maloráželovej, strednoráželovej a veľkoráželovej munície, vrátane chemických vstupov do výroby.",
     "since": "Od roku",
     "natoPartner": "Partner NATO",
-    "capabilities": "Naše schopnosti"
+    "capabilities": "Naše schopnosti",
+    "services": {
+      "vehicles": {
+        "title": "Modernizácia vozidiel",
+        "description": "Modernizácia obrených vozidiel a vojenských transportných systémov s najmodernejšími obrannými technológiami."
+      },
+      "artillery": {
+        "title": "Delostrelecké systémy",
+        "description": "Technológie a technologické procesy pre delostrelecký systém NORICUM GHN-45, húfnica s rážou 155 mm."
+      }
+    }
   },
   "about": {
     "title": "Naša história",
