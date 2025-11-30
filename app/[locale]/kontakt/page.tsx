@@ -28,8 +28,34 @@ export default async function ContactPage({
         </div>
       </section>
 
-      {/* Contact Content */}
+      {/* Interactive Map */}
       <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="relative w-full h-[500px] rounded-lg overflow-hidden border border-border shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.8299842536886!2d17.10722931571946!3d48.14393007922453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c894b3e8b5b77%3A0x8b5e5e5e5e5e5e5e!2zTsOhbS4gxL0uIMWgdMO6cmEgMiwgODExIDAyIEJyYXRpc2xhdmE!5e0!3m2!1sen!2ssk!4v1234567890123!5m2!1sen!2ssk"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="grayscale hover:grayscale-0 transition-all duration-500"
+              />
+              {/* Map Overlay */}
+              <div className="absolute top-4 left-4 glassmorphic px-4 py-2 rounded-lg border border-tactical-green/30">
+                <p className="font-mono text-sm text-tactical-green">
+                  📍 Nám. Ľ. Štúra 2, Bratislava
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Content */}
+      <section className="py-20 bg-muted/10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
@@ -46,9 +72,11 @@ export default async function ContactPage({
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Office Location</h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground text-sm">
                         DELTA DEFENCE, a.s.<br />
-                        Bratislava, Slovakia
+                        Nám. Ľ. Štúra 2<br />
+                        811 02 Bratislava<br />
+                        Slovakia
                       </p>
                     </div>
                   </div>
@@ -71,9 +99,12 @@ export default async function ContactPage({
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t("contact.email")}</h3>
-                      <p className="text-muted-foreground font-mono">
-                        info@deltadefence.sk
-                      </p>
+                      <a 
+                        href="mailto:office@deltadefence.eu"
+                        className="text-muted-foreground font-mono hover:text-tactical-green transition-colors"
+                      >
+                        office@deltadefence.eu
+                      </a>
                     </div>
                   </div>
                 </div>
