@@ -1,6 +1,4 @@
 import { MasonryGrid } from "@/components/gallery/MasonryGrid";
-import { getGalleryImages } from "@/lib/data";
-import { type Locale } from "@/types";
 import { getTranslations } from "next-intl/server";
 
 export default async function GalleryPage({
@@ -10,7 +8,6 @@ export default async function GalleryPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations();
-  const images = getGalleryImages(locale as Locale);
 
   return (
     <div className="min-h-screen">
@@ -32,7 +29,7 @@ export default async function GalleryPage({
       {/* Gallery Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <MasonryGrid images={images} />
+          <MasonryGrid />
         </div>
       </section>
     </div>

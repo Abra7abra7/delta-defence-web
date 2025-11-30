@@ -6,6 +6,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import { IMAGES, getAssetUrl } from "@/lib/images";
 
 interface HeroProps {
   locale: string;
@@ -31,9 +33,24 @@ export function Hero({ locale }: HeroProps) {
   }, [fullText]);
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden grid-pattern">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={getAssetUrl(IMAGES.homepage.hero)}
+          alt="Delta Defence"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-void-black/70" />
+      </div>
+      
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 grid-pattern opacity-20 z-10" />
+      
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background z-10" />
       
       {/* Animated grid lines */}
       <div className="absolute inset-0 opacity-20">
@@ -42,7 +59,7 @@ export function Hero({ locale }: HeroProps) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative z-20 container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

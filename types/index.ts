@@ -66,6 +66,6 @@ export interface HistoryEvent {
   description?: string;
 }
 
-export type Locale = "sk" | "en" | "ru" | "de";
+export type Locale = "sk" | "en" | "ru" | "de" | "he";
 
 
