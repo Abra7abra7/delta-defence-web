@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter, usePathname } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Globe } from "lucide-react";
@@ -24,26 +24,20 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const switchLanguage = (newLocale: string) => {
-    // Split pathname into segments
+    // Get current pathname without locale prefix
     const segments = pathname.split('/').filter(Boolean);
     
     // Remove first segment if it's a locale
     const locales = ['sk', 'en', 'ru', 'de', 'he'];
     if (segments.length > 0 && locales.includes(segments[0])) {
-      segments.shift(); // Remove the locale
+      segments.shift();
     }
     
-    // Build new path
-    let newPath = '';
-    if (newLocale === 'sk') {
-      // Slovak is default, no prefix needed
-      newPath = segments.length > 0 ? `/${segments.join('/')}` : '/';
-    } else {
-      // Other languages need prefix
-      newPath = segments.length > 0 ? `/${newLocale}/${segments.join('/')}` : `/${newLocale}`;
-    }
+    // Build path without locale (next-intl router will add it automatically)
+    const pathWithoutLocale = segments.length > 0 ? `/${segments.join('/')}` : '/';
     
-    router.push(newPath);
+    // Use next-intl router with locale - it handles prefix automatically
+    router.push(pathWithoutLocale, { locale: newLocale });
     setIsOpen(false);
   };
 
