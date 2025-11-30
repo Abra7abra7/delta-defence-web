@@ -1,6 +1,8 @@
 import { Timeline } from "@/components/about/Timeline";
 import { Certifications } from "@/components/about/Certifications";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
+import { IMAGES, getAssetUrl } from "@/lib/images";
 
 export default async function AboutPage({
   params,
@@ -33,6 +35,28 @@ export default async function AboutPage({
             <p className="text-lg text-muted-foreground leading-relaxed">
               {t("about.history")}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Images Gallery */}
+      <section className="py-20 bg-muted/10">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {IMAGES.aboutUs.map((image, index) => (
+              <div
+                key={image}
+                className="relative aspect-video rounded-lg overflow-hidden border border-border hover:border-tactical-green/50 transition-all group"
+              >
+                <Image
+                  src={getAssetUrl(image)}
+                  alt={`Delta Defence facility ${index + 1}`}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            ))}
           </div>
         </div>
       </section>
