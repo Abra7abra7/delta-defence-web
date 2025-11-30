@@ -27,9 +27,12 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
+  // Set text direction for RTL languages (Hebrew)
+  const dir = locale === "he" ? "rtl" : "ltr";
+
   return (
     <NextIntlClientProvider messages={messages}>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col" dir={dir}>
         <Header locale={locale} />
         <main className="flex-1 pt-20">{children}</main>
         <Footer locale={locale} />

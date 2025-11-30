@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://deltadefence.sk";
-  const locales = ["sk", "en", "ru", "de"];
+  const locales = ["sk", "en", "ru", "de", "he"];
   const pages = ["", "/o-nas", "/vyroba", "/galeria", "/kontakt"];
 
   const routes: MetadataRoute.Sitemap = [];

@@ -15,6 +15,7 @@ const languages = [
   { code: "en", label: "EN", name: "English" },
   { code: "ru", label: "RU", name: "Русский" },
   { code: "de", label: "DE", name: "Deutsch" },
+  { code: "he", label: "HE", name: "עברית" },
 ];
 
 export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {

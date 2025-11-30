@@ -58,15 +58,16 @@ A cutting-edge, high-performance web application for Delta Defence, a defense te
 
 ## 🌍 Internationalization
 
-The site supports 4 languages:
+The site supports 5 languages:
 - 🇸🇰 Slovak (sk) - Default
 - 🇬🇧 English (en)
 - 🇷🇺 Russian (ru)
 - 🇩🇪 German (de) - Uses English content with German UI translations
+- 🇮🇱 Hebrew (he) - Uses English content with Hebrew UI translations (RTL support)
 
-**Note:** German (DE) locale uses English page content from `data.json` as a fallback, while all UI elements (navigation, buttons, forms) are fully translated to German in `messages/de.json`.
+**Note:** German (DE) and Hebrew (HE) locales use English page content from `data.json` as a fallback, while all UI elements (navigation, buttons, forms) are fully translated in their respective `messages/*.json` files. Hebrew includes full RTL (right-to-left) layout support.
 
-Routes are automatically prefixed with locale: `/sk`, `/en`, `/ru`, `/de`
+Routes are automatically prefixed with locale: `/sk`, `/en`, `/ru`, `/de`, `/he`
 
 ## 🖼️ Key Features
 

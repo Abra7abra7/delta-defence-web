@@ -10,8 +10,8 @@ export function getPageData(locale: Locale, pagePath: string): PageData | null {
   // Normalize path - remove leading/trailing slashes
   const normalizedPath = pagePath.replace(/^\/|\/$/g, "");
   
-  // For DE (German), fallback to EN since we don't have DE content in data.json
-  const effectiveLocale = locale === "de" ? "en" : locale;
+  // For DE (German) and HE (Hebrew), fallback to EN since we don't have their content in data.json
+  const effectiveLocale = (locale === "de" || locale === "he") ? "en" : locale;
   
   // Build the full path with locale
   let searchPath = "";
@@ -34,8 +34,8 @@ export function getPageData(locale: Locale, pagePath: string): PageData | null {
  * Get all pages for a specific locale
  */
 export function getLocalePages(locale: Locale): PageData[] {
-  // For DE (German), fallback to EN pages
-  const effectiveLocale = locale === "de" ? "en" : locale;
+  // For DE (German) and HE (Hebrew), fallback to EN pages
+  const effectiveLocale = (locale === "de" || locale === "he") ? "en" : locale;
   
   if (effectiveLocale === "sk") {
     return data.pages.filter(
