@@ -24,16 +24,24 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const switchLanguage = (newLocale: string) => {
-    // Remove current locale from pathname
-    const pathWithoutLocale = pathname.replace(/^\/(sk|en|ru|de|he)(\/|$)/, "/");
+    // Split pathname into segments
+    const segments = pathname.split('/').filter(Boolean);
     
-    // Build new path with new locale
-    // If switching to SK (default), use path without locale prefix
-    const newPath = newLocale === "sk" && pathWithoutLocale === "/" 
-      ? "/" 
-      : newLocale === "sk"
-      ? pathWithoutLocale
-      : `/${newLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
+    // Remove first segment if it's a locale
+    const locales = ['sk', 'en', 'ru', 'de', 'he'];
+    if (segments.length > 0 && locales.includes(segments[0])) {
+      segments.shift(); // Remove the locale
+    }
+    
+    // Build new path
+    let newPath = '';
+    if (newLocale === 'sk') {
+      // Slovak is default, no prefix needed
+      newPath = segments.length > 0 ? `/${segments.join('/')}` : '/';
+    } else {
+      // Other languages need prefix
+      newPath = segments.length > 0 ? `/${newLocale}/${segments.join('/')}` : `/${newLocale}`;
+    }
     
     router.push(newPath);
     setIsOpen(false);
