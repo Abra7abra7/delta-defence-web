@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Domov",
+    "about": "O nás",
+    "production": "Výroba",
+    "gallery": "Galéria",
+    "contact": "Kontakt",
+    "contactUs": "Kontaktujte nás",
+    "findOutMore": "Zistite o nás viac"
+  },
+  "home": {
+    "welcome": "Vitajte na našej stránke",
+    "title": "DELTA DEFENCE, a.s. Bratislava",
+    "heroHeadline": "Autorizovaný výskum a vývoj pre obranné technológie",
+    "description": "Sme autorizovaná výskumná a vývojová (V&V), obchodná a výrobná spoločnosť špecializujúca sa na realizáciu projektov súvisiacich s výrobnými procesmi obrených vozidiel a technologickými procesmi pre výrobu maloráželovej, strednoráželovej a veľkoráželovej munície, vrátane chemických vstupov do výroby.",
+    "since": "Od roku",
+    "natoPartner": "Partner NATO",
+    "capabilities": "Naše schopnosti"
+  },
+  "about": {
+    "title": "Naša história",
+    "history": "Počas svojej 30-ročnej histórie sa DELTA DEFENCE, a.s. Bratislava, v úlohe integrátora, podieľala na všetkých transformačných projektoch Slovenska po vstupe do NATO (2004).",
+    "participation": "Táto účasť zahŕňa projekty uskutočnené v spolupráci s BAE Systems, ako napríklad projekt I FF pre identifikáciu priateľa alebo nepriateľa na základe komunikácie medzi pozemným radarom a transponderom, ktorý bol nainštalovaný do lietadla alebo vrtuľníka, alebo projekt pre mobilný komunikačný systém pre Slovenskú armádu.",
+    "acquisitions": "Prostredníctvom svojich akvizícií, či už francúzskeho výrobcu automatizovaných liniek na výrobu munície Manurhin alebo slovenského výrobcu výbušnín ISTROCHEM, spoločnosť získala prístup k technologickým procesom výroby automatizovaných liniek a rovnako získala aj kvalifikovaných pracovníkov.",
+    "portfolio": "Výrobné portfólio spoločnosti tvorí:",
+    "certifications": "Certifikácie a autorizácie",
+    "timeline": {
+      "1993": "Založenie spoločnosti Delta-B \"projekt NORICUM GHN-45\"",
+      "2004": "Akviícia MANURHIN, výrobca francúzskej municie s technológiou v Mulhouse",
+      "2005": "Spolupráca s BAE Systems \"IFF - identifikácia priateľ-nepriateľ\" pre Slovenské letectvo",
+      "2006": "Strategická spolupráca s Explosia, Pardubice Česká republika \"Nábojové prachy strednej a maloráželnej munície\"",
+      "2011": "Spolupráca s DIEHL BGT DEFENCE \"RM-70/85 MODULAR\"",
+      "2013": "Akviícia Istrochem Explosives, Bratislava Vývoj a výroba trhavín na Slovensku",
+      "2016": "Spolupráca s BAE SYSTEMS \"projekt mobilného C3 systému MOKYS\" Privatizácia Vojenského opravárenskeho podniku - VOP Prešov",
+      "2019": "Založenie Konštrukčného úradu Neotechnology"
+    },
+    "portfolioItems": {
+      "ammunition": "Výroba automatizovaných liniek na plnenie výbušných materiálov do veľkoráželovej munície (60 mm - 155 mm) metódou šnekovania.",
+      "vehicles": "Modernizácia obrených vozidiel",
+      "artillery": "Technológie a technologické procesy pre delostrelecký systém NORICUM GHN-45, húfnica s rážou 155 mm.",
+      "explosives": "Technológie a technologické procesy pre výrobné linky na priemyselné výbušniny.",
+      "grad": "Technológie a technologické procesy pre rakety GRAD rážeš 122 mm",
+      "automated": "Technológie a technologické procesy pre výrobu automatizovaných liniek na výrobu munície",
+      "modernization": "V oblasti modernizácie zbraňových systémov spoločnosť realizuje projekty vo svojich výrobných priestoroch, alebo aj na mieste u zákazníka."
+    }
+  },
+  "production": {
+    "title": "Výroba",
+    "ks4Title": "KS-4 Automatizovaná linka",
+    "ks4Description": "KS-4 je automatizovaný, sofistikovaný systém navrhnutý pre presné a efektívne plnenie delostreleckej munície a mínometných bômb pomocou metódy šnekovania. Pozostáva zo systému modulov, ktoré tvoria základné prvky linky:",
+    "modules": {
+      "filling": "Plniaci modul",
+      "fillingDesc": "Tento modul je zodpovedný za plnenie munície výbušným materiálom. Tvorí systém na nakladanie a prípravu nábojníc na plnenie.",
+      "milling": "Frézovací modul",
+      "millingDesc": "Tento modul vykonáva operácie na vytvorenie dutín pre zapaľovací systém v naplnených nábojniciach. Úzko súvisí s plniacim modulom, aby sa zabezpečila bezproblémová integrácia.",
+      "dosing": "Dávkovací modul",
+      "dosingDesc": "Tento modul zabezpečuje presné dávkovanie výbušného materiálu do nábojníc, v úzkom prepojení s plniacim modulom.",
+      "heating": "Vykurovací modul",
+      "heatingDesc": "Tento modul pripravuje výbušný materiál na požadovanú teplotu na plnenie. Úzko spolupracuje s dávkovacím modulom.",
+      "control": "Riadiaci modul",
+      "controlDesc": "Tento centralizovaný modul riadi všetky funkcie stroja. Zahŕňa počítačový riadiaci systém, bezpečnostné funkcie a ovládanie komponentov elektrickej distribúcie.",
+      "quality": "Modul kontroly kvality",
+      "qualityDesc": "Venovaný príprave vzoriek a hodnoteniu kvality plnenia výbušnými látkami, zahŕňa systém deliacich a kontrolných zariadení.",
+      "dust": "Modul odsávania prachu",
+      "dustDesc": "Tento modul kontroluje odsávanie prachu vznikajúceho počas procesov, udržiava čisté a bezpečné pracovné prostredie."
+    }
+  },
+  "gallery": {
+    "title": "Galéria"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "form": {
+      "name": "Meno",
+      "email": "Email",
+      "message": "Správa",
+      "send": "Odoslať"
+    },
+    "address": "Adresa",
+    "phone": "Telefón",
+    "email": "Email"
+  },
+  "footer": {
+    "rights": "Všetky práva vyhradené",
+    "newsletter": "Prihláste sa k odberu noviniek"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "production": "Produktion",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "contactUs": "Kontaktieren Sie uns",
+    "findOutMore": "Erfahren Sie mehr über uns"
+  },
+  "home": {
+    "welcome": "WILLKOMMEN AUF UNSERER SEITE",
+    "title": "DELTA DEFENCE, a.s. Bratislava",
+    "heroHeadline": "Autorisierte Forschung und Entwicklung für Verteidigungstechnologien",
+    "description": "Wir sind ein autorisiertes Forschungs- und Entwicklungs- (F&E), Handels- und Fertigungsunternehmen, das sich auf die Umsetzung von Projekten im Zusammenhang mit Produktionsprozessen von gepanzerten Fahrzeugen und technologischen Prozessen für die Herstellung von Klein-, Mittel- und Großkalibermunition spezialisiert hat, einschließlich chemischer Inputs für die Produktion.",
+    "since": "Seit",
+    "natoPartner": "NATO-Partner",
+    "capabilities": "Unsere Fähigkeiten"
+  },
+  "about": {
+    "title": "UNSERE GESCHICHTE",
+    "history": "Während seiner 30-jährigen Geschichte beteiligte sich DELTA DEFENCE, a.s. Bratislava, in der Rolle des Integrators an allen Transformationsprojekten der Slowakei nach dem Beitritt zur NATO (2004).",
+    "participation": "Diese Beteiligung umfasst Projekte, die in Zusammenarbeit mit BAE Systems durchgeführt wurden, wie z.B. das IFF-Projekt zur Freund-Feind-Erkennung auf der Grundlage der Kommunikation zwischen einem Bodenradar und einem in einem Flugzeug oder Hubschrauber installierten Transponder, oder ein Projekt für ein mobiles Kommunikationssystem für die slowakische Armee.",
+    "acquisitions": "Durch seine Akquisitionen, sei es der französische Hersteller automatisierter Linien für die Munitionsproduktion Manurhin oder der slowakische Sprengstoffhersteller ISTROCHEM, erhielt das Unternehmen Zugang zu den technologischen Prozessen der Produktion automatisierter Linien und erwarb auch qualifizierte Arbeitskräfte.",
+    "portfolio": "Das Produktionsportfolio des Unternehmens besteht aus:",
+    "certifications": "Zertifizierungen und Autorisierungen",
+    "timeline": {
+      "1993": "Gründung der Firma Delta-B \"Projekt NORICUM GHN-45\"",
+      "2004": "Erwerb von MANURHIN, französischer Munitionshersteller mit Mülhausener Technologie",
+      "2005": "Zusammenarbeit mit BAE Systems \"IFF - Freund-Feind-Erkennung\" für die slowakische Luftwaffe",
+      "2006": "Strategische Zusammenarbeit mit Explosia, Pardubice Tschechische Republik \"Pulver für Mittel- und Kleinkalibermunition\"",
+      "2011": "Zusammenarbeit mit DIEHL BGT DEFENCE \"RM-70/85 MODULAR\"",
+      "2013": "Erwerb von Istrochem Explosives, Bratislava Entwicklung und Produktion von Sprengstoffen in der Slowakei",
+      "2016": "Zusammenarbeit mit BAE SYSTEMS \"MOKYS mobiles C3-Systemprojekt\" Privatisierung des Militärreparaturunternehmens - VOP Prešov",
+      "2019": "Gründung des Konstruktionsbüros Neotechnology"
+    },
+    "portfolioItems": {
+      "ammunition": "Herstellung automatisierter Linien zum Füllen von Sprengmaterialien in Großkalibermunition (60 mm - 155 mm) nach dem Schneckenverfahren.",
+      "vehicles": "Modernisierung von gepanzerten Fahrzeugen",
+      "artillery": "Technologien und technologische Prozesse für das Artilleriesystem NORICUM GHN-45, eine Haubitze mit einem Kaliber von 155 mm.",
+      "explosives": "Technologien und technologische Prozesse für Produktionslinien für industrielle Sprengstoffe.",
+      "grad": "Technologien und technologische Prozesse für 122-mm-GRAD-Raketen",
+      "automated": "Technologien und technologische Prozesse für die Herstellung automatisierter Linien zur Munitionsproduktion",
+      "modernization": "Im Bereich der Modernisierung von Waffensystemen führt das Unternehmen Projekte in seinen Produktionsanlagen oder vor Ort beim Kunden durch."
+    }
+  },
+  "production": {
+    "title": "Produktion",
+    "ks4Title": "KS-4 Automatisierte Linie",
+    "ks4Description": "KS-4 ist ein automatisiertes, hochentwickeltes System, das für das präzise und effiziente Laden von Artilleriemunition und Mörsergranaten nach dem Schneckenverfahren entwickelt wurde. Es besteht aus einem System von Modulen, die die Grundelemente der Linie bilden:",
+    "modules": {
+      "filling": "Füllmodul",
+      "fillingDesc": "Dieses Modul ist für das Füllen von Munition mit Sprengmaterial verantwortlich. Es bildet ein System zum Laden und Vorbereiten von Patronen zum Füllen.",
+      "milling": "Fräsmodul",
+      "millingDesc": "Dieses Modul führt Operationen zur Erstellung von Hohlräumen für das Zündsystem in gefüllten Patronen durch. Es ist eng mit dem Füllmodul verbunden, um eine nahtlose Integration zu gewährleisten.",
+      "dosing": "Dosiermodul",
+      "dosingDesc": "Dieses Modul gewährleistet eine genaue Dosierung des Sprengmaterials in Patronen, in enger Verbindung mit dem Füllmodul.",
+      "heating": "Heizmodul",
+      "heatingDesc": "Dieses Modul bereitet das Sprengmaterial auf die erforderliche Temperatur zum Füllen vor. Es arbeitet eng mit dem Dosiermodul zusammen.",
+      "control": "Steuermodul",
+      "controlDesc": "Dieses zentralisierte Modul steuert alle Maschinenfunktionen. Es umfasst ein computergestütztes Steuersystem, Sicherheitsfunktionen und die Steuerung der elektrischen Verteilungskomponenten.",
+      "quality": "Qualitätskontrollmodul",
+      "qualityDesc": "Dediziert der Vorbereitung von Proben und der Bewertung der Qualität der Füllung mit Sprengstoffen, umfasst es ein System von Trenn- und Kontrollgeräten.",
+      "dust": "Staubabsaugmodul",
+      "dustDesc": "Dieses Modul steuert die Absaugung von während der Prozesse entstehendem Staub und sorgt für eine saubere und sichere Arbeitsumgebung."
+    }
+  },
+  "gallery": {
+    "title": "Galerie"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Senden"
+    },
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "newsletter": "Abonnieren Sie unseren Newsletter"
+  }
+}

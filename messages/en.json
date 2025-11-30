@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "production": "Production",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "contactUs": "Contact us",
+    "findOutMore": "Find out more about us"
+  },
+  "home": {
+    "welcome": "WELCOME ON OUR PAGE",
+    "title": "DELTA DEFENCE, a.s. Bratislava",
+    "heroHeadline": "Authorized Research and Development for Defense Technologies",
+    "description": "We are an authorized research and development (R&D), commercial and manufacturing company specializing in the implementation of projects related to the production processes of armored vehicles and technological processes for the production of small-caliber, medium-caliber and large-caliber ammunition, including chemical inputs to production.",
+    "since": "Since",
+    "natoPartner": "NATO Partner",
+    "capabilities": "Our Capabilities"
+  },
+  "about": {
+    "title": "OUR HISTORY",
+    "history": "During its 30-year history, DELTA DEFENCE, a.s. Bratislava, in the role of integrator, participated in all transformation projects of Slovakia, after joining NATO (2004).",
+    "participation": "This participation includes projects carried out in cooperation with BAE Systems, such as the IFF project for identifying friend or foe based on communication between a ground radar and a transponder installed in an aircraft or helicopter, or a project for a mobile communication system for the Slovak Army.",
+    "acquisitions": "Through its acquisitions, whether the French manufacturer of automated lines for the production of ammunition Manurhin or the Slovak manufacturer of explosives ISTROCHEM, the company gained access to the technological processes of the production of automated lines and also acquired qualified workers.",
+    "portfolio": "The company's production portfolio consists of:",
+    "certifications": "Certifications and Authorizations",
+    "timeline": {
+      "1993": "Establishment of the Delta-B company \"NORICUM GHN-45 project\"",
+      "2004": "Acquisition of MANURHIN, French ammunition manufacturer with Mulhouse technology",
+      "2005": "Cooperation with BAE Systems \"IFF - friend-foe identification\" for the Slovak Air Force",
+      "2006": "Strategic cooperation with Explosia, Pardubice Czech Republic \"Medium and small-caliber ammunition powders\"",
+      "2011": "Cooperation with DIEHL BGT DEFENSE \"RM-70/85 MODULAR\"",
+      "2013": "Acquisition of Istrochem Explosives, Bratislava Development and production of explosives in Slovakia",
+      "2016": "Cooperation with BAE SYSTEMS \"MOKYS mobile C3 system project\" Privatization of the Military Repair Company - VOP Prešov",
+      "2019": "Establishment of the Design Office of Neotechnology"
+    },
+    "portfolioItems": {
+      "ammunition": "Production of automated lines for filling explosive materials into large-caliber ammunition (60 mm - 155 mm) using the auger method.",
+      "vehicles": "Modernization of armored vehicles",
+      "artillery": "Technologies and technological processes for the NORICUM GHN-45 artillery system, a howitzer with a caliber of 155 mm.",
+      "explosives": "Technologies and technological processes for production lines for industrial explosives.",
+      "grad": "Technologies and technological processes for 122 mm GRAD rockets",
+      "automated": "Technologies and technological processes for the production of automated lines for the production of ammunition",
+      "modernization": "In the field of modernization of weapon systems, the company implements projects in its production facilities or on site at the customer's location."
+    }
+  },
+  "production": {
+    "title": "Production",
+    "ks4Title": "KS-4 Automated Line",
+    "ks4Description": "KS-4 is an automated, sophisticated system designed for accurate and efficient loading of artillery ammunition and mortar bombs using the auger method. It consists of a system of modules that form the basic elements of the line:",
+    "modules": {
+      "filling": "Filling Module",
+      "fillingDesc": "This module is responsible for filling ammunition with explosive material. It forms a system for loading and preparing cartridges for filling.",
+      "milling": "Milling Module",
+      "millingDesc": "This module performs operations to create cavities for the ignition system in filled cartridges. It is closely linked to the filling module, to ensure seamless integration.",
+      "dosing": "Dosing Module",
+      "dosingDesc": "This module ensures accurate dosing of explosive material into cartridges, in close connection with the filling module.",
+      "heating": "Heating Module",
+      "heatingDesc": "This module prepares the explosive material to the required temperature for filling. It works closely with the dosing module.",
+      "control": "Control Module",
+      "controlDesc": "This centralized module controls all machine functions. It includes a computer control system, safety features and control of electrical distribution components.",
+      "quality": "Quality Control Module",
+      "qualityDesc": "Dedicated to the preparation of samples and evaluation of the quality of filling with explosive substances, it includes a system of dividing and control devices.",
+      "dust": "Dust extraction module",
+      "dustDesc": "This module controls the extraction of dust generated during the processes, maintains a clean and safe working environment."
+    }
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send"
+    },
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "newsletter": "Subscribe to our newsletter"
+  }
+}
