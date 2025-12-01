@@ -12,10 +12,10 @@ import { motion } from "framer-motion";
 import { Send, CheckCircle } from "lucide-react";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Invalid email address"),
-  subject: z.string().min(5, "Subject must be at least 5 characters"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  name: z.string().min(2, "name"),
+  email: z.string().email("email"),
+  subject: z.string().min(5, "subject"),
+  message: z.string().min(10, "message"),
 });
 
 type FormData = z.infer<typeof formSchema>;
@@ -25,9 +25,18 @@ interface ContactFormProps {
 }
 
 export function ContactForm({ locale }: ContactFormProps) {
-  const t = useTranslations();
+  const t = useTranslations("contact");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+
+  const formSchema = z.object({
+    name: z.string().min(2, t("form.errors.name")),
+    email: z.string().email(t("form.errors.email")),
+    subject: z.string().min(5, t("form.errors.subject")),
+    message: z.string().min(10, t("form.errors.message")),
+  });
+
+  type FormData = z.infer<typeof formSchema>;
 
   const {
     register,
@@ -40,10 +49,10 @@ export function ContactForm({ locale }: ContactFormProps) {
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    
+
     console.log("Form data:", data);
     setIsSubmitting(false);
     setIsSuccess(true);
@@ -72,7 +81,7 @@ export function ContactForm({ locale }: ContactFormProps) {
         >
           <CheckCircle className="text-tactical-green" size={20} />
           <span className="text-tactical-green font-mono text-sm">
-            Message sent successfully!
+            {t("success")}
           </span>
         </motion.div>
       )}
@@ -81,13 +90,13 @@ export function ContactForm({ locale }: ContactFormProps) {
         {/* Name */}
         <div className="space-y-2">
           <Label htmlFor="name" className="font-mono">
-            {t("contact.form.name")}
+            {t("form.name")}
           </Label>
           <Input
             id="name"
             {...register("name")}
             className="glassmorphic border-border focus:border-tactical-green font-mono"
-            placeholder="John Doe"
+            placeholder={t("form.placeholders.name")}
           />
           {errors.name && (
             <p className="text-xs text-red-500 font-mono">{errors.name.message}</p>
@@ -97,14 +106,14 @@ export function ContactForm({ locale }: ContactFormProps) {
         {/* Email */}
         <div className="space-y-2">
           <Label htmlFor="email" className="font-mono">
-            {t("contact.form.email")}
+            {t("form.email")}
           </Label>
           <Input
             id="email"
             type="email"
             {...register("email")}
             className="glassmorphic border-border focus:border-tactical-green font-mono"
-            placeholder="john@example.com"
+            placeholder={t("form.placeholders.email")}
           />
           {errors.email && (
             <p className="text-xs text-red-500 font-mono">{errors.email.message}</p>
@@ -114,13 +123,13 @@ export function ContactForm({ locale }: ContactFormProps) {
         {/* Subject */}
         <div className="space-y-2">
           <Label htmlFor="subject" className="font-mono">
-            Subject
+            {t("form.subject")}
           </Label>
           <Input
             id="subject"
             {...register("subject")}
             className="glassmorphic border-border focus:border-tactical-green font-mono"
-            placeholder="Inquiry about..."
+            placeholder={t("form.placeholders.subject")}
           />
           {errors.subject && (
             <p className="text-xs text-red-500 font-mono">
@@ -132,14 +141,14 @@ export function ContactForm({ locale }: ContactFormProps) {
         {/* Message */}
         <div className="space-y-2">
           <Label htmlFor="message" className="font-mono">
-            {t("contact.form.message")}
+            {t("form.message")}
           </Label>
           <textarea
             id="message"
             {...register("message")}
             rows={6}
             className="w-full px-3 py-2 glassmorphic border border-border focus:border-tactical-green rounded-md focus:outline-none focus:ring-2 focus:ring-tactical-green/20 font-mono text-sm"
-            placeholder="Your message here..."
+            placeholder={t("form.placeholders.message")}
           />
           {errors.message && (
             <p className="text-xs text-red-500 font-mono">
@@ -157,11 +166,11 @@ export function ContactForm({ locale }: ContactFormProps) {
           {isSubmitting ? (
             <span className="flex items-center space-x-2">
               <span className="w-4 h-4 border-2 border-background/30 border-t-background rounded-full animate-spin" />
-              <span>TRANSMITTING...</span>
+              <span>{t("sending")}</span>
             </span>
           ) : (
             <span className="flex items-center space-x-2">
-              <span>{t("contact.form.send")}</span>
+              <span>{t("form.send")}</span>
               <Send size={16} className="group-hover:translate-x-1 transition-transform" />
             </span>
           )}
@@ -172,7 +181,7 @@ export function ContactForm({ locale }: ContactFormProps) {
       <div className="mt-6 pt-6 border-t border-border">
         <div className="flex items-center space-x-2 text-xs font-mono text-muted-foreground">
           <div className="w-2 h-2 rounded-full bg-tactical-green animate-pulse" />
-          <span>SECURE CONNECTION ACTIVE</span>
+          <span>{t("secure")}</span>
         </div>
       </div>
     </motion.div>

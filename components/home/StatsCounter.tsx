@@ -26,8 +26,8 @@ export function StatsCounter() {
     {
       icon: Cog,
       value: 30,
-      label: "Years of Experience",
-      suffix: "+",
+      label: t("stats.yearsExperience"),
+      suffix: t("stats.plus"),
     },
   ];
 

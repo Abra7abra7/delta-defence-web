@@ -3,35 +3,38 @@
 import { motion } from "framer-motion";
 import { Shield, Award, CheckCircle2, FileCheck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
-const certifications = [
-  {
-    icon: Shield,
-    title: "NATO AUTHORIZED",
-    description: "Authorized NATO contractor since 2004",
-    color: "tactical-green",
-  },
-  {
-    icon: Award,
-    title: "R&D LICENSE",
-    description: "Certified research and development facility",
-    color: "tactical-blue",
-  },
-  {
-    icon: FileCheck,
-    title: "ISO 9001",
-    description: "Quality management system certified",
-    color: "tactical-green",
-  },
-  {
-    icon: CheckCircle2,
-    title: "DEFENSE CONTRACTOR",
-    description: "Authorized defense technology contractor",
-    color: "tactical-blue",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export function Certifications() {
+  const t = useTranslations();
+
+  const certifications = [
+    {
+      icon: Shield,
+      title: t("footer.certifications.nato"),
+      description: t("about.certificationItems.natoDesc"),
+      color: "tactical-green",
+    },
+    {
+      icon: Award,
+      title: t("footer.certifications.rnd"),
+      description: t("about.certificationItems.rndDesc"),
+      color: "tactical-blue",
+    },
+    {
+      icon: FileCheck,
+      title: t("footer.certifications.iso"),
+      description: t("about.certificationItems.isoDesc"),
+      color: "tactical-green",
+    },
+    {
+      icon: CheckCircle2,
+      title: t("footer.certifications.defense"),
+      description: t("about.certificationItems.defenseDesc"),
+      color: "tactical-blue",
+    },
+  ];
+
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -43,10 +46,10 @@ export function Certifications() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold font-mono mb-4">
-            Certifications & Authorizations
+            {t("about.certifications")}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Recognized and certified by international defense standards
+            {t("about.certificationsDescription")}
           </p>
         </motion.div>
 

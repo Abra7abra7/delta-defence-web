@@ -22,7 +22,7 @@ export default async function ContactPage({
               {t("contact.title")}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Get in touch with our team for inquiries about our defense technologies and services
+              {t("contact.description")}
             </p>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default async function ContactPage({
               {/* Map Overlay */}
               <div className="absolute top-4 left-4 glassmorphic px-4 py-2 rounded-lg border border-tactical-green/30">
                 <p className="font-mono text-sm text-tactical-green">
-                  📍 Nám. Ľ. Štúra 2, Bratislava
+                  📍 {t("contact.mapOverlay")}
                 </p>
               </div>
             </div>
@@ -64,14 +64,14 @@ export default async function ContactPage({
                 <h2 className="text-2xl font-bold font-mono mb-6 text-tactical-green">
                   {t("contact.address")}
                 </h2>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-lg bg-tactical-green/10 flex items-center justify-center flex-shrink-0">
                       <MapPin className="text-tactical-green" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">Office Location</h3>
+                      <h3 className="font-semibold mb-1">{t("contact.officeLocationTitle")}</h3>
                       <p className="text-muted-foreground text-sm">
                         DELTA DEFENCE, a.s.<br />
                         Nám. Ľ. Štúra 2<br />
@@ -99,7 +99,7 @@ export default async function ContactPage({
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t("contact.email")}</h3>
-                      <a 
+                      <a
                         href="mailto:office@deltadefence.eu"
                         className="text-muted-foreground font-mono hover:text-tactical-green transition-colors"
                       >

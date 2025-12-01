@@ -70,7 +70,7 @@ export default async function AboutPage({
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="glassmorphic p-8 rounded-lg border">
               <h3 className="text-2xl font-bold font-mono mb-4 text-tactical-green">
-                Strategic Acquisitions
+                {t("about.strategicAcquisitionsTitle")}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
                 {t("about.acquisitions")}

@@ -23,10 +23,10 @@ export function Footer({ locale }: FooterProps) {
   ];
 
   const certifications = [
-    "NATO AUTHORIZED",
-    "R&D LICENSE",
-    "ISO 9001",
-    "DEFENSE CONTRACTOR",
+    t("footer.certifications.nato"),
+    t("footer.certifications.rnd"),
+    t("footer.certifications.iso"),
+    t("footer.certifications.defense"),
   ];
 
   return (
@@ -47,7 +47,7 @@ export function Footer({ locale }: FooterProps) {
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="font-mono text-sm font-semibold text-tactical-green uppercase tracking-wider">
-              Quick Links
+              {t("footer.quickLinks")}
             </h3>
             <nav className="flex flex-col space-y-2">
               {navigation.map((item) => (
@@ -111,7 +111,7 @@ export function Footer({ locale }: FooterProps) {
             </span>
           </div>
           <div className="text-xs font-mono text-muted-foreground">
-            Since 1993 | NATO Partner since 2004
+            {t("footer.since")}
           </div>
         </div>
       </div>
