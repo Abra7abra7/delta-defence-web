@@ -60,13 +60,13 @@ export function KS4ModuleExplorer({ locale }: KS4ModuleExplorerProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="glassmorphic rounded-lg border border-border hover:border-tactical-green/50 transition-all overflow-hidden"
+            className="glassmorphic rounded-lg border border-border hover:border-tactical-blue/50 transition-all overflow-hidden"
           >
             {/* Module Header - Clickable */}
             <button
               onClick={() => toggleModule(module.id)}
               className={`w-full text-left p-4 transition-all group ${
-                isExpanded ? "bg-tactical-green/10" : ""
+                isExpanded ? "bg-tactical-blue/10" : ""
               }`}
             >
               <div className="flex items-center justify-between">
@@ -74,13 +74,13 @@ export function KS4ModuleExplorer({ locale }: KS4ModuleExplorerProps) {
                   <div
                     className={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center transition-colors ${
                       isExpanded
-                        ? "bg-tactical-green/20"
-                        : "bg-tactical-green/10 group-hover:bg-tactical-green/20"
+                        ? "bg-tactical-blue/20"
+                        : "bg-tactical-blue/10 group-hover:bg-tactical-blue/20"
                     }`}
                   >
                     <Icon
                       className={`${
-                        isExpanded ? "text-tactical-green" : "text-tactical-green/70"
+                        isExpanded ? "text-tactical-blue" : "text-tactical-blue/70"
                       }`}
                       size={24}
                     />
@@ -88,7 +88,7 @@ export function KS4ModuleExplorer({ locale }: KS4ModuleExplorerProps) {
                   <div className="flex-1">
                     <div
                       className={`font-mono font-semibold ${
-                        isExpanded ? "text-tactical-green" : "text-foreground"
+                        isExpanded ? "text-tactical-blue" : "text-foreground"
                       }`}
                     >
                       {module.name}
@@ -107,7 +107,7 @@ export function KS4ModuleExplorer({ locale }: KS4ModuleExplorerProps) {
                 >
                   <ChevronDown
                     className={`${
-                      isExpanded ? "text-tactical-green" : "text-muted-foreground"
+                      isExpanded ? "text-tactical-blue" : "text-muted-foreground"
                     }`}
                     size={20}
                   />
@@ -125,7 +125,7 @@ export function KS4ModuleExplorer({ locale }: KS4ModuleExplorerProps) {
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="overflow-hidden"
                 >
-                  <div className="p-6 pt-0 border-t border-tactical-green/20">
+                  <div className="p-6 pt-0 border-t border-tactical-blue/20">
                     {/* Glitch Reveal Effect */}
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
@@ -147,8 +147,8 @@ export function KS4ModuleExplorer({ locale }: KS4ModuleExplorerProps) {
                         <span className="text-muted-foreground font-mono">
                           Status
                         </span>
-                        <span className="flex items-center space-x-2 text-tactical-green font-mono">
-                          <span className="w-2 h-2 rounded-full bg-tactical-green animate-pulse" />
+                        <span className="flex items-center space-x-2 text-tactical-blue font-mono">
+                          <span className="w-2 h-2 rounded-full bg-tactical-blue animate-pulse" />
                           <span>OPERATIONAL</span>
                         </span>
                       </div>
@@ -201,7 +201,7 @@ function GlitchText({ text }: { text: string }) {
           delay: 0.5,
           times: [0, 0.5, 1],
         }}
-        className="absolute inset-0 text-tactical-green leading-relaxed pointer-events-none"
+        className="absolute inset-0 text-tactical-blue leading-relaxed pointer-events-none"
         style={{ clipPath: "inset(0 0 50% 0)" }}
       >
         {text}

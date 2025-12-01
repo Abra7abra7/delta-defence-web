@@ -50,8 +50,8 @@ export default async function ProductionPage({
       <section className="py-20 bg-background/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="glassmorphic p-8 rounded-lg border hover:border-tactical-green/50 transition-all">
-              <h3 className="text-xl font-bold font-mono mb-4 text-tactical-green">
+            <div className="glassmorphic p-8 rounded-lg border hover:border-tactical-blue/50 transition-all">
+              <h3 className="text-xl font-bold font-mono mb-4 text-tactical-blue">
                 {t("production.automatedProductionTitle")}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -59,8 +59,8 @@ export default async function ProductionPage({
               </p>
             </div>
 
-            <div className="glassmorphic p-8 rounded-lg border hover:border-tactical-green/50 transition-all">
-              <h3 className="text-xl font-bold font-mono mb-4 text-tactical-green">
+            <div className="glassmorphic p-8 rounded-lg border hover:border-tactical-blue/50 transition-all">
+              <h3 className="text-xl font-bold font-mono mb-4 text-tactical-blue">
                 {t("production.vehicleModernizationTitle")}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -74,14 +74,14 @@ export default async function ProductionPage({
       {/* Production Images Gallery */}
       <section className="py-20 bg-muted/10">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold font-mono text-tactical-green mb-12 text-center">
+          <h2 className="text-3xl font-bold font-mono text-tactical-blue mb-12 text-center">
             {t("production.ks4LineTitle")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {IMAGES.production.map((image, index) => (
               <div
                 key={image}
-                className="relative aspect-video rounded-lg overflow-hidden border border-border hover:border-tactical-green/50 transition-all group"
+                className="relative aspect-video rounded-lg overflow-hidden border border-border hover:border-tactical-blue/50 transition-all group"
               >
                 <Image
                   src={getAssetUrl(image)}
@@ -90,7 +90,7 @@ export default async function ProductionPage({
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <p className="text-tactical-green font-mono text-sm">
+                  <p className="text-tactical-blue font-mono text-sm">
                     {t("production.module")} {String(index + 1).padStart(2, "0")}
                   </p>
                 </div>

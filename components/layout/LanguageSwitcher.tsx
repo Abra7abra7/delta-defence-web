@@ -69,10 +69,10 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
                 onClick={() => switchLanguage(lang.code)}
                 className={cn(
                   "w-full px-4 py-3 text-left text-sm transition-colors",
-                  "hover:bg-tactical-green/10 hover:text-tactical-green",
+                  "hover:bg-tactical-blue/10 hover:text-tactical-blue",
                   "flex items-center justify-between",
                   currentLocale === lang.code
-                    ? "bg-tactical-green/20 text-tactical-green font-medium"
+                    ? "bg-tactical-blue/20 text-tactical-blue font-medium"
                     : "text-foreground"
                 )}
               >

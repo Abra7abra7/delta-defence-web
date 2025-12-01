@@ -70,7 +70,7 @@ export function Lightbox({
             variant="outline"
             size="icon"
             onClick={onClose}
-            className="absolute top-4 right-4 z-20 glassmorphic hover:border-tactical-green"
+            className="absolute top-4 right-4 z-20 glassmorphic hover:border-tactical-blue"
           >
             <X size={24} />
           </Button>
@@ -80,7 +80,7 @@ export function Lightbox({
             variant="outline"
             size="icon"
             onClick={onPrev}
-            className="absolute left-4 z-20 glassmorphic hover:border-tactical-green"
+            className="absolute left-4 z-20 glassmorphic hover:border-tactical-blue"
           >
             <ChevronLeft size={24} />
           </Button>
@@ -89,7 +89,7 @@ export function Lightbox({
             variant="outline"
             size="icon"
             onClick={onNext}
-            className="absolute right-4 z-20 glassmorphic hover:border-tactical-green"
+            className="absolute right-4 z-20 glassmorphic hover:border-tactical-blue"
           >
             <ChevronRight size={24} />
           </Button>
@@ -109,14 +109,14 @@ export function Lightbox({
                 alt={`Gallery image ${currentIndex + 1}`}
                 width={1920}
                 height={1080}
-                className="max-w-full max-h-[85vh] w-auto h-auto object-contain rounded-lg border border-tactical-green/30 tactical-glow"
+                className="max-w-full max-h-[85vh] w-auto h-auto object-contain rounded-lg border border-tactical-blue/30 tactical-glow"
                 priority
               />
             </div>
 
             {/* Image Counter */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 glassmorphic px-4 py-2 rounded-full border border-tactical-green/30">
-              <span className="font-mono text-sm text-tactical-green">
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 glassmorphic px-4 py-2 rounded-full border border-tactical-blue/30">
+              <span className="font-mono text-sm text-tactical-blue">
                 {currentIndex + 1} / {totalImages}
               </span>
             </div>

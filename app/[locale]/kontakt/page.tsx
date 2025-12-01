@@ -44,8 +44,8 @@ export default async function ContactPage({
                 className="grayscale hover:grayscale-0 transition-all duration-500"
               />
               {/* Map Overlay */}
-              <div className="absolute top-4 left-4 glassmorphic px-4 py-2 rounded-lg border border-tactical-green/30">
-                <p className="font-mono text-sm text-tactical-green">
+              <div className="absolute top-4 left-4 glassmorphic px-4 py-2 rounded-lg border border-tactical-blue/30">
+                <p className="font-mono text-sm text-tactical-blue">
                   📍 {t("contact.mapOverlay")}
                 </p>
               </div>
@@ -61,14 +61,14 @@ export default async function ContactPage({
             {/* Contact Info */}
             <div className="space-y-8">
               <div className="glassmorphic p-8 rounded-lg border">
-                <h2 className="text-2xl font-bold font-mono mb-6 text-tactical-green">
+                <h2 className="text-2xl font-bold font-mono mb-6 text-tactical-blue">
                   {t("contact.address")}
                 </h2>
 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg bg-tactical-green/10 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="text-tactical-green" size={24} />
+                    <div className="w-12 h-12 rounded-lg bg-tactical-blue/10 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="text-tactical-blue" size={24} />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t("contact.officeLocationTitle")}</h3>
@@ -82,8 +82,8 @@ export default async function ContactPage({
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg bg-tactical-green/10 flex items-center justify-center flex-shrink-0">
-                      <Phone className="text-tactical-green" size={24} />
+                    <div className="w-12 h-12 rounded-lg bg-tactical-blue/10 flex items-center justify-center flex-shrink-0">
+                      <Phone className="text-tactical-blue" size={24} />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t("contact.phone")}</h3>
@@ -94,14 +94,14 @@ export default async function ContactPage({
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg bg-tactical-green/10 flex items-center justify-center flex-shrink-0">
-                      <Mail className="text-tactical-green" size={24} />
+                    <div className="w-12 h-12 rounded-lg bg-tactical-blue/10 flex items-center justify-center flex-shrink-0">
+                      <Mail className="text-tactical-blue" size={24} />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t("contact.email")}</h3>
                       <a
                         href="mailto:office@deltadefence.eu"
-                        className="text-muted-foreground font-mono hover:text-tactical-green transition-colors"
+                        className="text-muted-foreground font-mono hover:text-tactical-blue transition-colors"
                       >
                         office@deltadefence.eu
                       </a>

@@ -46,7 +46,7 @@ export default async function AboutPage({
             {IMAGES.aboutUs.map((image, index) => (
               <div
                 key={image}
-                className="relative aspect-video rounded-lg overflow-hidden border border-border hover:border-tactical-green/50 transition-all group"
+                className="relative aspect-video rounded-lg overflow-hidden border border-border hover:border-tactical-blue/50 transition-all group"
               >
                 <Image
                   src={getAssetUrl(image)}
@@ -69,7 +69,7 @@ export default async function AboutPage({
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="glassmorphic p-8 rounded-lg border">
-              <h3 className="text-2xl font-bold font-mono mb-4 text-tactical-green">
+              <h3 className="text-2xl font-bold font-mono mb-4 text-tactical-blue">
                 {t("about.strategicAcquisitionsTitle")}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -78,13 +78,13 @@ export default async function AboutPage({
             </div>
 
             <div className="glassmorphic p-8 rounded-lg border">
-              <h3 className="text-2xl font-bold font-mono mb-4 text-tactical-green">
+              <h3 className="text-2xl font-bold font-mono mb-4 text-tactical-blue">
                 {t("about.portfolio")}
               </h3>
               <div className="space-y-4">
                 {portfolioItems.map((item, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <div className="w-2 h-2 mt-2 rounded-full bg-tactical-green flex-shrink-0" />
+                    <div className="w-2 h-2 mt-2 rounded-full bg-tactical-blue flex-shrink-0" />
                     <p className="text-muted-foreground leading-relaxed">{item}</p>
                   </div>
                 ))}

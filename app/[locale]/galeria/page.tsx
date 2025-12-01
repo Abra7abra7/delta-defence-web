@@ -33,7 +33,7 @@ export default async function GalleryPage({
         {/* Production & Technology */}
         <section>
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold font-mono text-tactical-green mb-8 border-b border-tactical-green/30 pb-4">
+            <h2 className="text-2xl md:text-3xl font-bold font-mono text-tactical-blue mb-8 border-b border-tactical-blue/30 pb-4">
               {t("gallery.categories.production")}
             </h2>
             <MasonryGrid images={IMAGES.gallery.production} />
@@ -43,7 +43,7 @@ export default async function GalleryPage({
         {/* Products & Systems */}
         <section className="bg-muted/5 py-10">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold font-mono text-tactical-green mb-8 border-b border-tactical-green/30 pb-4">
+            <h2 className="text-2xl md:text-3xl font-bold font-mono text-tactical-blue mb-8 border-b border-tactical-blue/30 pb-4">
               {t("gallery.categories.products")}
             </h2>
             <MasonryGrid images={IMAGES.gallery.products} />
@@ -53,7 +53,7 @@ export default async function GalleryPage({
         {/* Facilities & Infrastructure */}
         <section>
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold font-mono text-tactical-green mb-8 border-b border-tactical-green/30 pb-4">
+            <h2 className="text-2xl md:text-3xl font-bold font-mono text-tactical-blue mb-8 border-b border-tactical-blue/30 pb-4">
               {t("gallery.categories.facilities")}
             </h2>
             <MasonryGrid images={IMAGES.gallery.facilities} />

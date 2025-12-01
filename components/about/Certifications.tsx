@@ -13,7 +13,7 @@ export function Certifications() {
       icon: Shield,
       title: t("footer.certifications.nato"),
       description: t("about.certificationItems.natoDesc"),
-      color: "tactical-green",
+      color: "tactical-blue",
     },
     {
       icon: Award,
@@ -25,7 +25,7 @@ export function Certifications() {
       icon: FileCheck,
       title: t("footer.certifications.iso"),
       description: t("about.certificationItems.isoDesc"),
-      color: "tactical-green",
+      color: "tactical-blue",
     },
     {
       icon: CheckCircle2,
@@ -84,10 +84,10 @@ function CertificationCard({ cert, index }: CertificationCardProps) {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       whileHover={{ y: -10 }}
     >
-      <Card className="glassmorphic h-full border-border hover:border-tactical-green/50 transition-all group">
+      <Card className="glassmorphic h-full border-border hover:border-tactical-blue/50 transition-all group">
         <CardContent className="p-6 text-center space-y-4">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-tactical-green/10 group-hover:bg-tactical-green/20 transition-colors">
-            <Icon className="text-tactical-green" size={32} />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-tactical-blue/10 group-hover:bg-tactical-blue/20 transition-colors">
+            <Icon className="text-tactical-blue" size={32} />
           </div>
           <h3 className="font-mono font-bold text-sm tracking-wider">
             {cert.title}

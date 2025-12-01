@@ -27,7 +27,7 @@ export function MasonryGrid({ images }: MasonryGridProps) {
             className="break-inside-avoid mb-4 cursor-pointer group"
             onClick={() => setSelectedImage(image)}
           >
-            <div className="relative overflow-hidden rounded-lg border border-tactical-green/30 hover:border-tactical-green transition-all duration-300 shadow-lg hover:shadow-tactical-green/50">
+            <div className="relative overflow-hidden rounded-lg border border-tactical-blue/30 hover:border-tactical-blue transition-all duration-300 shadow-lg hover:shadow-tactical-blue/50">
               <Image
                 src={getAssetUrl(image)}
                 alt={`Gallery image ${index + 1}`}
@@ -36,7 +36,7 @@ export function MasonryGrid({ images }: MasonryGridProps) {
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-void-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <p className="text-tactical-green font-mono text-sm">
+                <p className="text-tactical-blue font-mono text-sm">
                   Click to view full size
                 </p>
               </div>
@@ -55,7 +55,7 @@ export function MasonryGrid({ images }: MasonryGridProps) {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-off-white hover:text-tactical-green transition-colors"
+            className="absolute top-4 right-4 text-off-white hover:text-tactical-blue transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             <X size={32} />
@@ -71,7 +71,7 @@ export function MasonryGrid({ images }: MasonryGridProps) {
               alt="Full size image"
               width={1920}
               height={1080}
-              className="object-contain max-h-[90vh] rounded-lg border border-tactical-green/50"
+              className="object-contain max-h-[90vh] rounded-lg border border-tactical-blue/50"
             />
           </motion.div>
         </motion.div>

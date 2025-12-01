@@ -30,7 +30,7 @@ export function Timeline({ locale }: TimelineProps) {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-tactical-green/20 hidden md:block" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-tactical-blue/20 hidden md:block" />
 
           <div className="space-y-12">
             {events.map((event, index) => (
@@ -70,14 +70,14 @@ function TimelineItem({ event, index, isInView }: TimelineItemProps) {
       <div className={`flex-1 ${isEven ? "md:text-right" : "md:text-left"}`}>
         <motion.div
           whileHover={{ scale: 1.02 }}
-          className="glassmorphic p-6 rounded-lg border border-border hover:border-tactical-green/50 transition-all group"
+          className="glassmorphic p-6 rounded-lg border border-border hover:border-tactical-blue/50 transition-all group"
         >
           <div
             className={`inline-flex items-center space-x-2 mb-3 ${
               isEven ? "md:flex-row-reverse md:space-x-reverse" : ""
             }`}
           >
-            <Calendar className="text-tactical-green" size={20} />
+            <Calendar className="text-tactical-blue" size={20} />
             <span className="font-mono text-2xl font-bold tactical-glow">
               {event.year}
             </span>
@@ -94,7 +94,7 @@ function TimelineItem({ event, index, isInView }: TimelineItemProps) {
           initial={{ scale: 0 }}
           animate={isInView ? { scale: 1 } : {}}
           transition={{ duration: 0.4, delay: index * 0.1 }}
-          className="w-6 h-6 rounded-full bg-tactical-green tactical-glow border-4 border-background"
+          className="w-6 h-6 rounded-full bg-tactical-blue tactical-glow border-4 border-background"
         />
       </div>
 

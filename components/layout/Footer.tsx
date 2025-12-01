@@ -37,7 +37,7 @@ export function Footer({ locale }: FooterProps) {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="font-mono text-xl font-bold tracking-wider">
-              DELTA <span className="text-tactical-green">DEFENCE</span>
+              DELTA <span className="text-tactical-blue">DEFENCE</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               {t("home.description")}
@@ -46,7 +46,7 @@ export function Footer({ locale }: FooterProps) {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-mono text-sm font-semibold text-tactical-green uppercase tracking-wider">
+            <h3 className="font-mono text-sm font-semibold text-tactical-blue uppercase tracking-wider">
               {t("footer.quickLinks")}
             </h3>
             <nav className="flex flex-col space-y-2">
@@ -54,7 +54,7 @@ export function Footer({ locale }: FooterProps) {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-sm text-muted-foreground hover:text-tactical-green transition-colors"
+                  className="text-sm text-muted-foreground hover:text-tactical-blue transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -64,7 +64,7 @@ export function Footer({ locale }: FooterProps) {
 
           {/* Newsletter */}
           <div className="space-y-4">
-            <h3 className="font-mono text-sm font-semibold text-tactical-green uppercase tracking-wider">
+            <h3 className="font-mono text-sm font-semibold text-tactical-blue uppercase tracking-wider">
               {t("footer.newsletter")}
             </h3>
             <div className="flex space-x-2">
@@ -75,7 +75,7 @@ export function Footer({ locale }: FooterProps) {
               />
               <Button
                 size="sm"
-                className="bg-tactical-green text-background hover:bg-tactical-green/90"
+                className="bg-tactical-blue text-background hover:bg-tactical-blue/90"
               >
                 →
               </Button>
@@ -93,7 +93,7 @@ export function Footer({ locale }: FooterProps) {
                 key={cert}
                 className="flex items-center space-x-2 text-xs font-mono text-muted-foreground"
               >
-                <CheckCircle2 size={16} className="text-tactical-green" />
+                <CheckCircle2 size={16} className="text-tactical-blue" />
                 <span>{cert}</span>
               </div>
             ))}
@@ -105,7 +105,7 @@ export function Footer({ locale }: FooterProps) {
         {/* Bottom Bar */}
         <div className="py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-            <Shield size={16} className="text-tactical-green" />
+            <Shield size={16} className="text-tactical-blue" />
             <span>
               © {new Date().getFullYear()} DELTA DEFENCE, a.s. {t("footer.rights")}
             </span>

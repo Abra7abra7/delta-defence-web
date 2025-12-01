@@ -69,7 +69,7 @@ export function ContactForm({ locale }: ContactFormProps) {
       transition={{ duration: 0.6 }}
       className="glassmorphic p-8 rounded-lg border"
     >
-      <h2 className="text-2xl font-bold font-mono mb-6 text-tactical-green">
+      <h2 className="text-2xl font-bold font-mono mb-6 text-tactical-blue">
         Send Message
       </h2>
 
@@ -77,10 +77,10 @@ export function ContactForm({ locale }: ContactFormProps) {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-6 p-4 bg-tactical-green/10 border border-tactical-green/30 rounded-lg flex items-center space-x-3"
+          className="mb-6 p-4 bg-tactical-blue/10 border border-tactical-blue/30 rounded-lg flex items-center space-x-3"
         >
-          <CheckCircle className="text-tactical-green" size={20} />
-          <span className="text-tactical-green font-mono text-sm">
+          <CheckCircle className="text-tactical-blue" size={20} />
+          <span className="text-tactical-blue font-mono text-sm">
             {t("success")}
           </span>
         </motion.div>
@@ -95,7 +95,7 @@ export function ContactForm({ locale }: ContactFormProps) {
           <Input
             id="name"
             {...register("name")}
-            className="glassmorphic border-border focus:border-tactical-green font-mono"
+            className="glassmorphic border-border focus:border-tactical-blue font-mono"
             placeholder={t("form.placeholders.name")}
           />
           {errors.name && (
@@ -112,7 +112,7 @@ export function ContactForm({ locale }: ContactFormProps) {
             id="email"
             type="email"
             {...register("email")}
-            className="glassmorphic border-border focus:border-tactical-green font-mono"
+            className="glassmorphic border-border focus:border-tactical-blue font-mono"
             placeholder={t("form.placeholders.email")}
           />
           {errors.email && (
@@ -128,7 +128,7 @@ export function ContactForm({ locale }: ContactFormProps) {
           <Input
             id="subject"
             {...register("subject")}
-            className="glassmorphic border-border focus:border-tactical-green font-mono"
+            className="glassmorphic border-border focus:border-tactical-blue font-mono"
             placeholder={t("form.placeholders.subject")}
           />
           {errors.subject && (
@@ -147,7 +147,7 @@ export function ContactForm({ locale }: ContactFormProps) {
             id="message"
             {...register("message")}
             rows={6}
-            className="w-full px-3 py-2 glassmorphic border border-border focus:border-tactical-green rounded-md focus:outline-none focus:ring-2 focus:ring-tactical-green/20 font-mono text-sm"
+            className="w-full px-3 py-2 glassmorphic border border-border focus:border-tactical-blue rounded-md focus:outline-none focus:ring-2 focus:ring-tactical-blue/20 font-mono text-sm"
             placeholder={t("form.placeholders.message")}
           />
           {errors.message && (
@@ -161,7 +161,7 @@ export function ContactForm({ locale }: ContactFormProps) {
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-tactical-green text-background hover:bg-tactical-green/90 tactical-glow font-mono group"
+          className="w-full bg-tactical-blue text-background hover:bg-tactical-blue/90 tactical-glow font-mono group"
         >
           {isSubmitting ? (
             <span className="flex items-center space-x-2">
@@ -180,7 +180,7 @@ export function ContactForm({ locale }: ContactFormProps) {
       {/* Terminal-style decoration */}
       <div className="mt-6 pt-6 border-t border-border">
         <div className="flex items-center space-x-2 text-xs font-mono text-muted-foreground">
-          <div className="w-2 h-2 rounded-full bg-tactical-green animate-pulse" />
+          <div className="w-2 h-2 rounded-full bg-tactical-blue animate-pulse" />
           <span>{t("secure")}</span>
         </div>
       </div>

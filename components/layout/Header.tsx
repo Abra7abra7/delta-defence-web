@@ -40,7 +40,7 @@ export function Header({ locale }: HeaderProps) {
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center space-x-2">
             <div className="font-mono text-xl font-bold tracking-wider tactical-glow">
-              DELTA <span className="text-tactical-green">DEFENCE</span>
+              DELTA <span className="text-tactical-blue">DEFENCE</span>
             </div>
           </Link>
 
@@ -52,9 +52,9 @@ export function Header({ locale }: HeaderProps) {
                 href={item.href}
                 className={cn(
                   "px-4 py-2 text-sm font-medium transition-all duration-200 rounded-md",
-                  "hover:bg-muted hover:text-tactical-green",
+                  "hover:bg-muted hover:text-tactical-blue",
                   isActive(item.href)
-                    ? "text-tactical-green border-b-2 border-tactical-green"
+                    ? "text-tactical-blue border-b-2 border-tactical-blue"
                     : "text-muted-foreground"
                 )}
               >
@@ -68,7 +68,7 @@ export function Header({ locale }: HeaderProps) {
             <LanguageSwitcher currentLocale={locale} />
             <Button
               asChild
-              className="bg-tactical-green text-background hover:bg-tactical-green/90 tactical-glow font-mono"
+              className="bg-tactical-blue text-background hover:bg-tactical-blue/90 tactical-glow font-mono"
             >
               <Link href={`/${locale}/kontakt`}>{t("nav.contactUs")}</Link>
             </Button>
@@ -94,7 +94,7 @@ export function Header({ locale }: HeaderProps) {
                 className={cn(
                   "block px-4 py-2 text-sm font-medium rounded-md transition-colors",
                   isActive(item.href)
-                    ? "bg-tactical-green/10 text-tactical-green"
+                    ? "bg-tactical-blue/10 text-tactical-blue"
                     : "text-muted-foreground hover:bg-muted"
                 )}
               >

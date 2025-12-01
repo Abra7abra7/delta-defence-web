@@ -32,8 +32,11 @@ export function StatsCounter() {
   ];
 
   return (
-    <section ref={ref} className="py-20 bg-background/50">
-      <div className="container mx-auto px-4">
+    <section ref={ref} className="py-20 bg-gunmetal relative overflow-hidden">
+      {/* Background Grid */}
+      <div className="absolute inset-0 grid-pattern opacity-10" />
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <StatItem
@@ -90,16 +93,23 @@ function StatItem({ stat, isInView, delay }: StatItemProps) {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay }}
-      className="glassmorphic p-8 rounded-lg border text-center space-y-4 hover:border-tactical-green/50 transition-all group"
+      className="relative group p-8 bg-card/50 border border-white/5 backdrop-blur-sm hover:bg-card/80 transition-all duration-300"
     >
-      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-tactical-green/10 group-hover:bg-tactical-green/20 transition-colors">
-        <Icon className="text-tactical-green" size={32} />
+      {/* Corner Brackets */}
+      <div className="corner-brackets absolute inset-0 pointer-events-none" />
+
+      <div className="flex flex-col items-center text-center space-y-4">
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-none bg-tactical-blue/10 border border-tactical-blue/20 group-hover:border-tactical-blue/50 group-hover:bg-tactical-blue/20 transition-all duration-300">
+          <Icon className="text-tactical-blue" size={32} />
+        </div>
+        <div className="font-mono text-5xl font-bold text-white tracking-tighter">
+          {count}
+          <span className="text-tactical-blue">{stat.suffix}</span>
+        </div>
+        <div className="text-gray-400 font-medium uppercase tracking-widest text-sm">
+          {stat.label}
+        </div>
       </div>
-      <div className="font-mono text-5xl font-bold tactical-glow">
-        {count}
-        {stat.suffix}
-      </div>
-      <div className="text-muted-foreground font-medium">{stat.label}</div>
     </motion.div>
   );
 }
