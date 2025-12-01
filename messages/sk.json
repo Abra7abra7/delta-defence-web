@@ -27,71 +27,120 @@
       }
     }
   },
+  "stats": {
+    "yearsExperience": "Rokov skúseností",
+    "plus": "+"
+  },
   "about": {
-    "title": "Naša história",
-    "history": "Počas svojej 30-ročnej histórie sa DELTA DEFENCE, a.s. Bratislava, v úlohe integrátora, podieľala na všetkých transformačných projektoch Slovenska po vstupe do NATO (2004).",
-    "participation": "Táto účasť zahŕňa projekty uskutočnené v spolupráci s BAE Systems, ako napríklad projekt I FF pre identifikáciu priateľa alebo nepriateľa na základe komunikácie medzi pozemným radarom a transponderom, ktorý bol nainštalovaný do lietadla alebo vrtuľníka, alebo projekt pre mobilný komunikačný systém pre Slovenskú armádu.",
-    "acquisitions": "Prostredníctvom svojich akvizícií, či už francúzskeho výrobcu automatizovaných liniek na výrobu munície Manurhin alebo slovenského výrobcu výbušnín ISTROCHEM, spoločnosť získala prístup k technologickým procesom výroby automatizovaných liniek a rovnako získala aj kvalifikovaných pracovníkov.",
-    "portfolio": "Výrobné portfólio spoločnosti tvorí:",
-    "certifications": "Certifikácie a autorizácie",
+    "title": "NAŠA HISTÓRIA",
+    "history": "Počas svojej 30-ročnej histórie sa DELTA DEFENCE, a.s. Bratislava v úlohe integrátora podieľala na všetkých transformačných projektoch Slovenska po vstupe do NATO (2004).",
+    "participation": "Táto účasť zahŕňa projekty realizované v spolupráci s BAE Systems, ako napríklad projekt IFF na identifikáciu vlastný-cudzí založený na komunikácii medzi pozemným radarom a transpondérom inštalovaným v lietadle alebo vrtuľníku, alebo projekt mobilného komunikačného systému pre Ozbrojené sily SR.",
+    "acquisitions": "Prostredníctvom svojich akvizícií, či už francúzskeho výrobcu automatizovaných liniek na výrobu munície Manurhin alebo slovenského výrobcu výbušnín ISTROCHEM, spoločnosť získala prístup k technologickým procesom výroby automatizovaných liniek a získala aj kvalifikovaných pracovníkov.",
+    "portfolio": "Výrobné portfólio spoločnosti pozostáva z:",
+    "certifications": "Certifikácie a oprávnenia",
+    "certificationsDescription": "Uznávané a certifikované medzinárodnými obrannými štandardmi",
+    "strategicAcquisitionsTitle": "Strategické akvizície",
     "timeline": {
       "1993": "Založenie spoločnosti Delta-B \"projekt NORICUM GHN-45\"",
-      "2004": "Akviícia MANURHIN, výrobca francúzskej municie s technológiou v Mulhouse",
-      "2005": "Spolupráca s BAE Systems \"IFF - identifikácia priateľ-nepriateľ\" pre Slovenské letectvo",
-      "2006": "Strategická spolupráca s Explosia, Pardubice Česká republika \"Nábojové prachy strednej a maloráželnej munície\"",
-      "2011": "Spolupráca s DIEHL BGT DEFENCE \"RM-70/85 MODULAR\"",
-      "2013": "Akviícia Istrochem Explosives, Bratislava Vývoj a výroba trhavín na Slovensku",
-      "2016": "Spolupráca s BAE SYSTEMS \"projekt mobilného C3 systému MOKYS\" Privatizácia Vojenského opravárenskeho podniku - VOP Prešov",
-      "2019": "Založenie Konštrukčného úradu Neotechnology"
+      "2004": "Akvizícia MANURHIN, francúzskeho výrobcu munície s technológiou Mulhouse",
+      "2005": "Spolupráca s BAE Systems \"IFF - identifikácia vlastný-cudzí\" pre Vzdušné sily SR",
+      "2006": "Strategická spolupráca s Explosia, Pardubice Česká republika \"Prachy pre strednú a malokalibrovú muníciu\"",
+      "2011": "Spolupráca s DIEHL BGT DEFENSE \"RM-70/85 MODULAR\"",
+      "2013": "Akvizícia Istrochem Explosives, Bratislava Vývoj a výroba výbušnín na Slovensku",
+      "2016": "Spolupráca s BAE SYSTEMS \"projekt mobilného systému C3 MOKYS\" Privatizácia Vojenského opravárenského podniku - VOP Prešov",
+      "2019": "Založenie Konštrukčnej kancelárie Neotechnology"
     },
     "portfolioItems": {
-      "ammunition": "Výroba automatizovaných liniek na plnenie výbušných materiálov do veľkoráželovej munície (60 mm - 155 mm) metódou šnekovania.",
-      "vehicles": "Modernizácia obrených vozidiel",
-      "artillery": "Technológie a technologické procesy pre delostrelecký systém NORICUM GHN-45, húfnica s rážou 155 mm.",
+      "ammunition": "Výroba automatizovaných liniek na plnenie výbušných látok do veľkokalibrovej munície (60 mm - 155 mm) závitovkovou metódou.",
+      "vehicles": "Modernizácia obrnených vozidiel",
+      "artillery": "Technológie a technologické procesy pre delostrelecký systém NORICUM GHN-45, húfnica kalibru 155 mm.",
       "explosives": "Technológie a technologické procesy pre výrobné linky na priemyselné výbušniny.",
-      "grad": "Technológie a technologické procesy pre rakety GRAD rážeš 122 mm",
-      "automated": "Technológie a technologické procesy pre výrobu automatizovaných liniek na výrobu munície",
-      "modernization": "V oblasti modernizácie zbraňových systémov spoločnosť realizuje projekty vo svojich výrobných priestoroch, alebo aj na mieste u zákazníka."
+      "grad": "Technológie a technologické procesy pre rakety 122 mm GRAD",
+      "automated": "Technológie a technologické procesy na výrobu automatizovaných liniek na výrobu munície",
+      "modernization": "V oblasti modernizácie zbraňových systémov spoločnosť realizuje projekty vo svojich výrobných priestoroch alebo priamo u zákazníka."
+    },
+    "certificationItems": {
+      "natoDesc": "Autorizovaný dodávateľ NATO od roku 2004",
+      "rndDesc": "Certifikované výskumné a vývojové pracovisko",
+      "isoDesc": "Certifikovaný systém manažérstva kvality",
+      "defenseDesc": "Autorizovaný dodávateľ obranných technológií"
     }
   },
   "production": {
     "title": "Výroba",
-    "ks4Title": "KS-4 Automatizovaná linka",
-    "ks4Description": "KS-4 je automatizovaný, sofistikovaný systém navrhnutý pre presné a efektívne plnenie delostreleckej munície a mínometných bômb pomocou metódy šnekovania. Pozostáva zo systému modulov, ktoré tvoria základné prvky linky:",
+    "ks4Title": "Automatizovaná linka KS-4",
+    "ks4Description": "KS-4 je automatizovaný, sofistikovaný systém určený na presné a efektívne plnenie delostreleckej munície a mínometných granátov závitovkovou metódou. Pozostáva zo systému modulov, ktoré tvoria základné prvky linky:",
+    "ks4LineTitle": "Výrobná linka KS-4",
+    "module": "MODUL",
+    "automatedProductionTitle": "Automatizovaná výroba",
+    "vehicleModernizationTitle": "Modernizácia vozidiel",
     "modules": {
       "filling": "Plniaci modul",
-      "fillingDesc": "Tento modul je zodpovedný za plnenie munície výbušným materiálom. Tvorí systém na nakladanie a prípravu nábojníc na plnenie.",
+      "fillingDesc": "Tento modul je zodpovedný za plnenie munície výbušnou látkou. Tvorí systém na nakladanie a prípravu nábojníc na plnenie.",
       "milling": "Frézovací modul",
-      "millingDesc": "Tento modul vykonáva operácie na vytvorenie dutín pre zapaľovací systém v naplnených nábojniciach. Úzko súvisí s plniacim modulom, aby sa zabezpečila bezproblémová integrácia.",
+      "millingDesc": "Tento modul vykonáva operácie na vytvorenie dutín pre zapaľovací systém v naplnených nábojniciach. Je úzko prepojený s plniacim modulom, aby sa zabezpečila bezproblémová integrácia.",
       "dosing": "Dávkovací modul",
-      "dosingDesc": "Tento modul zabezpečuje presné dávkovanie výbušného materiálu do nábojníc, v úzkom prepojení s plniacim modulom.",
-      "heating": "Vykurovací modul",
-      "heatingDesc": "Tento modul pripravuje výbušný materiál na požadovanú teplotu na plnenie. Úzko spolupracuje s dávkovacím modulom.",
+      "dosingDesc": "Tento modul zabezpečuje presné dávkovanie výbušnej látky do nábojníc v úzkom prepojení s plniacim modulom.",
+      "heating": "Ohrievací modul",
+      "heatingDesc": "Tento modul pripravuje výbušnú látku na požadovanú teplotu pre plnenie. Úzko spolupracuje s dávkovacím modulom.",
       "control": "Riadiaci modul",
-      "controlDesc": "Tento centralizovaný modul riadi všetky funkcie stroja. Zahŕňa počítačový riadiaci systém, bezpečnostné funkcie a ovládanie komponentov elektrickej distribúcie.",
+      "controlDesc": "Tento centralizovaný modul riadi všetky funkcie stroja. Zahŕňa počítačový riadiaci systém, bezpečnostné prvky a riadenie komponentov elektrickej distribúcie.",
       "quality": "Modul kontroly kvality",
-      "qualityDesc": "Venovaný príprave vzoriek a hodnoteniu kvality plnenia výbušnými látkami, zahŕňa systém deliacich a kontrolných zariadení.",
+      "qualityDesc": "Určený na prípravu vzoriek a hodnotenie kvality plnenia výbušnými látkami, zahŕňa systém deliacich a kontrolných zariadení.",
       "dust": "Modul odsávania prachu",
-      "dustDesc": "Tento modul kontroluje odsávanie prachu vznikajúceho počas procesov, udržiava čisté a bezpečné pracovné prostredie."
+      "dustDesc": "Tento modul riadi odsávanie prachu vznikajúceho počas procesov, udržiava čisté a bezpečné pracovné prostredie."
     }
   },
   "gallery": {
-    "title": "Galéria"
+    "title": "Galéria",
+    "description": "Preskúmajte naše výrobné zariadenia, technológie a obranné systémy",
+    "categories": {
+      "production": "Výroba a Technológie",
+      "products": "Produkty a Systémy",
+      "facilities": "Zariadenia a Infraštruktúra"
+    }
   },
   "contact": {
-    "title": "Kontakt",
+    "email": "Email",
+    "title": "Poslať správu",
+    "description": "Kontaktujte náš tím pre otázky týkajúce sa našich obranných technológií a služieb",
+    "officeLocationTitle": "Sídlo kancelárie",
+    "mapOverlay": "Nám. Ľ. Štúra 2, Bratislava",
+    "success": "Správa úspešne odoslaná!",
+    "sending": "ODOSIELANIE...",
+    "secure": "BEZPEČNÉ PRIPOJENIE AKTÍVNE",
     "form": {
       "name": "Meno",
       "email": "Email",
       "message": "Správa",
-      "send": "Odoslať"
+      "send": "Odoslať",
+      "subject": "Predmet",
+      "placeholders": {
+        "name": "Ján Novák",
+        "email": "jan@example.com",
+        "subject": "Dopyt ohľadom...",
+        "message": "Vaša správa..."
+      },
+      "errors": {
+        "name": "Meno musí mať aspoň 2 znaky",
+        "email": "Neplatná emailová adresa",
+        "subject": "Predmet musí mať aspoň 5 znakov",
+        "message": "Správa musí mať aspoň 10 znakov"
+      }
     },
     "address": "Adresa",
-    "phone": "Telefón",
-    "email": "Email"
+    "phone": "Telefón"
   },
   "footer": {
     "rights": "Všetky práva vyhradené",
-    "newsletter": "Prihláste sa k odberu noviniek"
+    "newsletter": "Prihláste sa na odber noviniek",
+    "quickLinks": "Rýchle odkazy",
+    "certifications": {
+      "nato": "NATO AUTORIZOVANÝ",
+      "rnd": "R&D LICENCIA",
+      "iso": "ISO 9001",
+      "defense": "OBRANNÝ DODÁVATEĽ"
+    },
+    "since": "Od roku 1993 | Partner NATO od roku 2004"
   }
 }

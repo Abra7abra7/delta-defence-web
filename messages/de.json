@@ -27,6 +27,10 @@
       }
     }
   },
+  "stats": {
+    "yearsExperience": "Jahre Erfahrung",
+    "plus": "+"
+  },
   "about": {
     "title": "UNSERE GESCHICHTE",
     "history": "Während seiner 30-jährigen Geschichte beteiligte sich DELTA DEFENCE, a.s. Bratislava, in der Rolle des Integrators an allen Transformationsprojekten der Slowakei nach dem Beitritt zur NATO (2004).",
@@ -34,12 +38,14 @@
     "acquisitions": "Durch seine Akquisitionen, sei es der französische Hersteller automatisierter Linien für die Munitionsproduktion Manurhin oder der slowakische Sprengstoffhersteller ISTROCHEM, erhielt das Unternehmen Zugang zu den technologischen Prozessen der Produktion automatisierter Linien und erwarb auch qualifizierte Arbeitskräfte.",
     "portfolio": "Das Produktionsportfolio des Unternehmens besteht aus:",
     "certifications": "Zertifizierungen und Autorisierungen",
+    "certificationsDescription": "Anerkannt und zertifiziert nach internationalen Verteidigungsstandards",
+    "strategicAcquisitionsTitle": "Strategische Akquisitionen",
     "timeline": {
       "1993": "Gründung der Firma Delta-B \"Projekt NORICUM GHN-45\"",
       "2004": "Erwerb von MANURHIN, französischer Munitionshersteller mit Mülhausener Technologie",
       "2005": "Zusammenarbeit mit BAE Systems \"IFF - Freund-Feind-Erkennung\" für die slowakische Luftwaffe",
       "2006": "Strategische Zusammenarbeit mit Explosia, Pardubice Tschechische Republik \"Pulver für Mittel- und Kleinkalibermunition\"",
-      "2011": "Zusammenarbeit mit DIEHL BGT DEFENCE \"RM-70/85 MODULAR\"",
+      "2011": "Zusammenarbeit mit DIEHL BGT DEFENSE \"RM-70/85 MODULAR\"",
       "2013": "Erwerb von Istrochem Explosives, Bratislava Entwicklung und Produktion von Sprengstoffen in der Slowakei",
       "2016": "Zusammenarbeit mit BAE SYSTEMS \"MOKYS mobiles C3-Systemprojekt\" Privatisierung des Militärreparaturunternehmens - VOP Prešov",
       "2019": "Gründung des Konstruktionsbüros Neotechnology"
@@ -52,12 +58,22 @@
       "grad": "Technologien und technologische Prozesse für 122-mm-GRAD-Raketen",
       "automated": "Technologien und technologische Prozesse für die Herstellung automatisierter Linien zur Munitionsproduktion",
       "modernization": "Im Bereich der Modernisierung von Waffensystemen führt das Unternehmen Projekte in seinen Produktionsanlagen oder vor Ort beim Kunden durch."
+    },
+    "certificationItems": {
+      "natoDesc": "Autorisierter NATO-Auftragnehmer seit 2004",
+      "rndDesc": "Zertifizierte Forschungs- und Entwicklungseinrichtung",
+      "isoDesc": "Zertifiziertes Qualitätsmanagementsystem",
+      "defenseDesc": "Autorisierter Auftragnehmer für Verteidigungstechnologie"
     }
   },
   "production": {
     "title": "Produktion",
     "ks4Title": "KS-4 Automatisierte Linie",
     "ks4Description": "KS-4 ist ein automatisiertes, hochentwickeltes System, das für das präzise und effiziente Laden von Artilleriemunition und Mörsergranaten nach dem Schneckenverfahren entwickelt wurde. Es besteht aus einem System von Modulen, die die Grundelemente der Linie bilden:",
+    "ks4LineTitle": "KS-4 Produktionslinie",
+    "module": "MODUL",
+    "automatedProductionTitle": "Automatisierte Produktion",
+    "vehicleModernizationTitle": "Fahrzeugmodernisierung",
     "modules": {
       "filling": "Füllmodul",
       "fillingDesc": "Dieses Modul ist für das Füllen von Munition mit Sprengmaterial verantwortlich. Es bildet ein System zum Laden und Vorbereiten von Patronen zum Füllen.",
@@ -76,22 +92,55 @@
     }
   },
   "gallery": {
-    "title": "Galerie"
+    "title": "Galerie",
+    "description": "Entdecken Sie unsere Produktionsstätten, Technologien und Verteidigungssysteme",
+    "categories": {
+      "production": "Produktion & Technologie",
+      "products": "Produkte & Systeme",
+      "facilities": "Einrichtungen & Infrastruktur"
+    }
   },
   "contact": {
-    "title": "Kontakt",
+    "email": "E-Mail",
+    "title": "Nachricht senden",
+    "description": "Kontaktieren Sie unser Team für Anfragen zu unseren Verteidigungstechnologien und Dienstleistungen",
+    "officeLocationTitle": "Bürostandort",
+    "mapOverlay": "Nám. Ľ. Štúra 2, Bratislava",
+    "success": "Nachricht erfolgreich gesendet!",
+    "sending": "ÜBERTRAGUNG...",
+    "secure": "SICHERE VERBINDUNG AKTIV",
     "form": {
       "name": "Name",
       "email": "E-Mail",
       "message": "Nachricht",
-      "send": "Senden"
+      "send": "Senden",
+      "subject": "Betreff",
+      "placeholders": {
+        "name": "Max Mustermann",
+        "email": "max@example.com",
+        "subject": "Anfrage bezüglich...",
+        "message": "Ihre Nachricht hier..."
+      },
+      "errors": {
+        "name": "Name muss mindestens 2 Zeichen lang sein",
+        "email": "Ungültige E-Mail-Adresse",
+        "subject": "Betreff muss mindestens 5 Zeichen lang sein",
+        "message": "Nachricht muss mindestens 10 Zeichen lang sein"
+      }
     },
     "address": "Adresse",
-    "phone": "Telefon",
-    "email": "E-Mail"
+    "phone": "Telefon"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten",
-    "newsletter": "Abonnieren Sie unseren Newsletter"
+    "newsletter": "Abonnieren Sie unseren Newsletter",
+    "quickLinks": "Schnelllinks",
+    "certifications": {
+      "nato": "NATO AUTORISIERT",
+      "rnd": "F&E LIZENZ",
+      "iso": "ISO 9001",
+      "defense": "VERTEIDIGUNGSAUFTRAGNEHMER"
+    },
+    "since": "Seit 1993 | NATO-Partner seit 2004"
   }
 }

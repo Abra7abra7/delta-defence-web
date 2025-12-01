@@ -6,10 +6,14 @@ import { useState } from 'react';
 import { X } from 'lucide-react';
 import { IMAGES, getAssetUrl } from '@/lib/images';
 
-export function MasonryGrid() {
+interface MasonryGridProps {
+  images: string[] | readonly string[];
+}
+
+export function MasonryGrid({ images }: MasonryGridProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const galleryImages = IMAGES.gallery;
+  const galleryImages = images;
 
   return (
     <>

@@ -27,6 +27,10 @@
       }
     }
   },
+  "stats": {
+    "yearsExperience": "Years of Experience",
+    "plus": "+"
+  },
   "about": {
     "title": "OUR HISTORY",
     "history": "During its 30-year history, DELTA DEFENCE, a.s. Bratislava, in the role of integrator, participated in all transformation projects of Slovakia, after joining NATO (2004).",
@@ -34,6 +38,8 @@
     "acquisitions": "Through its acquisitions, whether the French manufacturer of automated lines for the production of ammunition Manurhin or the Slovak manufacturer of explosives ISTROCHEM, the company gained access to the technological processes of the production of automated lines and also acquired qualified workers.",
     "portfolio": "The company's production portfolio consists of:",
     "certifications": "Certifications and Authorizations",
+    "certificationsDescription": "Recognized and certified by international defense standards",
+    "strategicAcquisitionsTitle": "Strategic Acquisitions",
     "timeline": {
       "1993": "Establishment of the Delta-B company \"NORICUM GHN-45 project\"",
       "2004": "Acquisition of MANURHIN, French ammunition manufacturer with Mulhouse technology",
@@ -52,12 +58,22 @@
       "grad": "Technologies and technological processes for 122 mm GRAD rockets",
       "automated": "Technologies and technological processes for the production of automated lines for the production of ammunition",
       "modernization": "In the field of modernization of weapon systems, the company implements projects in its production facilities or on site at the customer's location."
+    },
+    "certificationItems": {
+      "natoDesc": "Authorized NATO contractor since 2004",
+      "rndDesc": "Certified research and development facility",
+      "isoDesc": "Quality management system certified",
+      "defenseDesc": "Authorized defense technology contractor"
     }
   },
   "production": {
     "title": "Production",
     "ks4Title": "KS-4 Automated Line",
     "ks4Description": "KS-4 is an automated, sophisticated system designed for accurate and efficient loading of artillery ammunition and mortar bombs using the auger method. It consists of a system of modules that form the basic elements of the line:",
+    "ks4LineTitle": "KS-4 Production Line",
+    "module": "MODULE",
+    "automatedProductionTitle": "Automated Production",
+    "vehicleModernizationTitle": "Vehicle Modernization",
     "modules": {
       "filling": "Filling Module",
       "fillingDesc": "This module is responsible for filling ammunition with explosive material. It forms a system for loading and preparing cartridges for filling.",
@@ -76,22 +92,55 @@
     }
   },
   "gallery": {
-    "title": "Gallery"
+    "title": "Gallery",
+    "description": "Explore our production facilities, technologies, and defense systems",
+    "categories": {
+      "production": "Production & Technology",
+      "products": "Products & Systems",
+      "facilities": "Facilities & Infrastructure"
+    }
   },
   "contact": {
-    "title": "Contact",
+    "email": "Email",
+    "title": "Send Message",
+    "description": "Get in touch with our team for inquiries about our defense technologies and services",
+    "officeLocationTitle": "Office Location",
+    "mapOverlay": "Nám. Ľ. Štúra 2, Bratislava",
+    "success": "Message sent successfully!",
+    "sending": "TRANSMITTING...",
+    "secure": "SECURE CONNECTION ACTIVE",
     "form": {
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "send": "Send"
+      "send": "Send",
+      "subject": "Subject",
+      "placeholders": {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "subject": "Inquiry about...",
+        "message": "Your message here..."
+      },
+      "errors": {
+        "name": "Name must be at least 2 characters",
+        "email": "Invalid email address",
+        "subject": "Subject must be at least 5 characters",
+        "message": "Message must be at least 10 characters"
+      }
     },
     "address": "Address",
-    "phone": "Phone",
-    "email": "Email"
+    "phone": "Phone"
   },
   "footer": {
     "rights": "All rights reserved",
-    "newsletter": "Subscribe to our newsletter"
+    "newsletter": "Subscribe to our newsletter",
+    "quickLinks": "Quick Links",
+    "certifications": {
+      "nato": "NATO AUTHORIZED",
+      "rnd": "R&D LICENSE",
+      "iso": "ISO 9001",
+      "defense": "DEFENSE CONTRACTOR"
+    },
+    "since": "Since 1993 | NATO Partner since 2004"
   }
 }
